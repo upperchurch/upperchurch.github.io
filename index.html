@@ -3,8 +3,15 @@
 	<head>
 		<title>Upper Church</title>
 		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link rel="shortcut icon" href="favicon.ico">
+		<script type="text/javascript">
+			function imgLoaded(img){
+			    var imgWrapper = img.parentNode;
+			 
+			    imgWrapper.className += imgWrapper.className ? ' loaded' : 'loaded';
+			};
+		</script>
 	</head>
 	<body>
 		<!--<nav>
@@ -17,6 +24,12 @@
     		<div class="blurb">
         		<h1>Upper Church @ Summerhall</h1>
 				<p>Lorem ipsum dolar <a href="/about">ipsum factum...</a></p>
+				<div class="img_wrapper">
+				    <img src="img/frost.jpg" alt="" onload="imgLoaded(this)"/>
+				</div>
+				<div class="img_wrapper">
+				    <img src="img/tram.jpg" alt="" onload="imgLoaded(this)"/>
+				</div>
     		</div><!-- /.blurb -->
 		</div><!-- /.container -->
 		<footer>
