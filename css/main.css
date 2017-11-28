@@ -60,6 +60,11 @@ ul.posts li {
 .image{
     width: 7rem;
     filter: grayscale(100%);
+    transition: filter 0.5s ease-out;
+}
+
+.image:hover{
+    filter: grayscale(30%);
 }
 
 .image-link {
