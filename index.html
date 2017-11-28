@@ -4,14 +4,8 @@
 		<title>Upper Church</title>
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link href="css/lightbox.min.css" rel="stylesheet">
 		<link rel="shortcut icon" href="favicon.ico">
-		<script type="text/javascript">
-			function imgLoaded(img){
-			    var imgWrapper = img.parentNode;
-			 
-			    imgWrapper.className += imgWrapper.className ? ' loaded' : 'loaded';
-			};
-		</script>
 	</head>
 	<body>
 		<!--<nav>
@@ -24,16 +18,23 @@
     		<div class="blurb">
         		<h1>Upper Church @ Summerhall</h1>
 				<p>Lorem ipsum dolar <a href="/about">ipsum factum...</a></p>
-				<div class="img_wrapper">
-				    <img src="img/frost.jpg" alt="" onload="imgLoaded(this)"/>
-				</div>
-				<div class="img_wrapper">
-				    <img src="img/tram.jpg" alt="" onload="imgLoaded(this)"/>
-				</div>
-    		</div><!-- /.blurb -->
+
+				<a class="image-link" href="img/frost.jpg" data-lightbox="test-set">
+					<img class="image" src="img/thumb/thumb-frost.jpg" alt="frost, mountain pass">
+				</a>
+
+				<a class="image-link" href="img/tram.jpg" data-lightbox="test-set">
+					<img class="image" src="img/thumb/thumb-tram.jpg" alt="tram, nagasaki">
+				</a>
+
+				<!--<a href="img/frost.jpg" data-lightbox="venue">frost</a>
+				<a href="img/tram.jpg" data-lightbox="venue">tram</a> -->
+
+    		</div>
 		</div><!-- /.container -->
 		<footer>
     		email <a href="mailto:pete@upper.church">pete</a> or <a href="mailto:euan@upper.church">euan</a>
 		</footer>
+		<script src="js/lightbox-plus-jquery.min.js"></script>
 	</body>
 </html>
