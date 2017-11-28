@@ -48,7 +48,13 @@ ul.posts li {
 
 .image{
     width: 7rem;
+    filter: grayscale(100%);
+}
+
+.image-b{
+    width: 7rem;
     border-radius: 4px;
+    filter: grayscale(100%);
 }
 
 .image-link {
