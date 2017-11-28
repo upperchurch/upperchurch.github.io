@@ -22,15 +22,23 @@ a:hover {
 h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    margin-bottom: 0.5rem;
+}
+h1:hover{
+    border-bottom: 2px solid currentColor;
+    display: inline-block;
+    line-height: 0.85;
+    text-shadow:
+        2px 2px white,
+        2px -2px white,
+        -2px 2px white,
+        -2px -2px white;
 }
 p {
     font-size: 1.5em;
     line-height: 1.4em;
     color: #333;
-}
-
-.blurb {
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.8rem;
 }
 
 footer {
@@ -42,6 +50,14 @@ footer {
     padding: 0px;
 }
 
+.blurb {
+    margin-bottom: 1rem;
+}
+
+#image-wrapper{
+    margin: 0rem 0rem 0rem 1rem;
+}
+
 ul.posts { 
     margin: 20px auto 40px; 
     font-size: 1.5em;
@@ -50,6 +66,17 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+
+/*.underline {
+  border-bottom: 2px solid currentColor;
+  display: inline-block;
+  line-height: 0.85;
+  text-shadow:
+    2px 2px white,
+    2px -2px white,
+    -2px 2px white,
+    -2px -2px white;
+}*/
 
 .image{
     width: 7rem;
