@@ -28,6 +28,11 @@ p {
     line-height: 1.4em;
     color: #333;
 }
+
+.blurb {
+    margin-bottom: 0.4rem;
+}
+
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
@@ -51,16 +56,10 @@ ul.posts li {
     filter: grayscale(100%);
 }
 
-.image-b{
-    width: 7rem;
-    border-radius: 4px;
-    filter: grayscale(100%);
-}
-
 .image-link {
     display: inline-block;
     padding: 2px;
-    margin: 0 0.2rem 1rem 0.2rem;
+    margin: 0.2rem 0.2rem 0.2rem 0.2rem;
     background-color: #fff;
     line-height: 0;
     border-radius: 4px;
