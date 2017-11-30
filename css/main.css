@@ -49,6 +49,10 @@ footer {
     margin: 0rem 0rem 0rem 1rem;
 }
 
+#subwrapper{
+    height: 234px;
+}
+
 ul.posts { 
     margin: 20px auto 40px; 
     font-size: 1.5em;
